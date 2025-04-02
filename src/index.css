@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background: url('../public/background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a2c2a;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255, 228, 225, 0.85);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(255, 182, 193, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6d3d3d;
+  text-shadow: 2px 2px 10px rgba(255, 152, 152, 0.6);
+  text-align: center;
+}
+
+.quote {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff4081;
+}
+
+
+.file-input {
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 12px;
+  background: #fff5f5;
+  color: #8b4c4c;
+  border: 2px solid #ff4081;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.upload-button {
+  background: linear-gradient(135deg, #ff4081, #ff1744);
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 5px 5px 12px rgba(255, 82, 82, 0.4);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, #ff1744, #d50000);
+  box-shadow: 7px 7px 18px rgba(255, 82, 82, 0.6);
+  transform: scale(1.05);
+}
+
+.back-button {
+  margin-top: 15px;
+  background: #555;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+  background: #333;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.prediction-box {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  background: rgba(255, 99, 71, 0.9);
+  color: white;
+  box-shadow: 0px 0px 10px rgba(255, 99, 71, 0.5);
+}
