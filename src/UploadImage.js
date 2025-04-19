@@ -1,6 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
+const backendURL = "https://e-waste-sorting-assistant-backend.onrender.com";
 
+const handleImageUpload = async (file) => {
+  const formData = new FormData();
+  formData.append("file", file);
+
+  try {
+    const response = await fetch(`${backendURL}/classify`, {
+      method: "POST",
+      body: formData,
+    });
+    const data = await response.json();
+    console.log(data); // Display the classification result in the console
+  } catch (error) {
+    console.error("Error:", error); // Handle any errors
+  }
+};
 const UploadImage = () => {
   const [file, setFile] = useState(null);
   const [prediction, setPrediction] = useState("");
